@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+import "google/api/annotations.proto";
+import "rpc_create_server.proto";
+
+option go_package = "github.com/okzmo/noname/pb";
+
+service ChatApp {
+  rpc CreateServer(CreateServerRequest) returns (CreateServerResponse) {
+    option (google.api.http) = {
+      post: "/v1/create_server"
+      body: "*"
+    };
+  };
+}

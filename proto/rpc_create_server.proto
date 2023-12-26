@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package pb;
+
+
+option go_package = "github.com/okzmo/noname/pb";
+
+message CreateServerRequest {
+    string username = 1;
+}
+
+message CreateServerResponse {
+    string user = 1;
+}
