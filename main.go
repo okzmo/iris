@@ -5,9 +5,9 @@ import (
 	"github.com/gofiber/fiber/v2/log"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	"github.com/okzmo/noname/grpc"
-	"github.com/okzmo/noname/util"
-	"github.com/okzmo/noname/websocket"
+	"github.com/okzmo/iris/grpc"
+	"github.com/okzmo/iris/util"
+	"github.com/okzmo/iris/websocket"
 )
 
 func main() {

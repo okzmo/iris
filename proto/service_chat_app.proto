@@ -5,7 +5,7 @@ package pb;
 import "google/api/annotations.proto";
 import "rpc_create_server.proto";
 
-option go_package = "github.com/okzmo/noname/pb";
+option go_package = "github.com/okzmo/iris/pb";
 
 service ChatApp {
   rpc CreateServer(CreateServerRequest) returns (CreateServerResponse) {

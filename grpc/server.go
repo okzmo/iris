@@ -2,14 +2,13 @@ package grpc
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"net"
 	"net/http"
 
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
-	"github.com/okzmo/noname/pb"
-	"github.com/okzmo/noname/util"
+	"github.com/okzmo/iris/pb"
+	"github.com/okzmo/iris/util"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"google.golang.org/protobuf/encoding/protojson"
@@ -73,8 +72,6 @@ func RunGRPCGateway(config util.Config) {
 	if err != nil {
 		log.Fatal("cannot register handler server", err)
 	}
-
-	fmt.Println(grpcMux)
 
 	mux := http.NewServeMux()
 	mux.Handle("/", grpcMux)

@@ -3,7 +3,7 @@ syntax = "proto3";
 package pb;
 
 
-option go_package = "github.com/okzmo/noname/pb";
+option go_package = "github.com/okzmo/iris/pb";
 
 message CreateServerRequest {
     string username = 1;
